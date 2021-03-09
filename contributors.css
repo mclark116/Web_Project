@@ -1,14 +1,16 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
 	font-family: poppins;
   background-size: cover;
-  background-image: url("film reel.jpg");
+  background-image: ;
   background-attachment: fixed;
   background-position: center center;
+  background-color: black;
 }
 .wrapper {
 	width: 100%;
@@ -65,23 +67,28 @@ body {
 	width: 210px;
 }
 
-iframe {border: 2px solid black;
-float: left;
-margin-right: 10px;
+iframe {/*border: 2px solid blue;*/
+float: right;
+margin: ;
 }
 
 @supports (display: grid) {
 	
   main { 
     max-width: 10000px;
-    margin: 0px 100px;
+    margin: 0px 10%;
   }
   article {
     margin: 0;
   }
+  
+  
+  
+  
   .deals {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: /*repeat(auto-fit, minmax(*/80%, 1fr;
+	grid-template-rows: 1fr;
     grid-gap: 1rem;
   }
 }
@@ -91,52 +98,7 @@ margin-right: 10px;
   font-size: 80%;
   border: 2px red;
 }
-.sale-item {
-  display: flex;
-  flex-flow: column;
-  border: 1px solid #bfbfbf;
-  border-radius: ;
-  padding: .5rem;
-  background-color: white;
-}
-a {text-decoration: none;
-color: black;
-}
-.sale-item > h1 {
-  margin: 1rem 1rem 0;
-  text-align: center;
-}
-.sale-item > ul {
-  margin: 0 0 1rem;
-}
-.sale-item > p {
-  margin: 0.25em 1rem 1rem;
-}
-.sale-item > img {
-  order: -1;
-  align-self: left;
-  height: 200px;
-  object-fit: cover;
-}
-#headline > img {height: 300px;}
 
-/*bring this image down to show the whole head*/
-
-.sale-item > button {
-  margin-top: auto; 
-  background: #00e600;
-  color: white;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 1rem;
-  font-size: 1.2rem;
-}
-.pic {width: 100%;
-height: auto;
-}
-.pic2{max-width: 100%;
-height: auto;
-}
 .sale-item:hover {background-color: #bfbfbf;
 }
 /*style for the top box*/
@@ -158,25 +120,78 @@ height: auto;
   border: 2px red;
 }
 .sale-item {
+	/*display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 2rem;*/
   display: flex;
-  flex-flow: column;
-  border: 1px solid #bfbfbf;
+  flex-direction: row;
+  /*flex-flow: column;*/
+  /*border: 3px solid red;*/
   border-radius: ;
-  padding: .5rem;
+  padding: 0px;
   background-color: white;
 }
- 
-.author {grid-area: author;
-	grid-row-start: author;
-	grid-row-end: author;
-    grid-column-start: author;
-    grid-column-end: author;
-color: black;
-font: 400 .625rem roboto condensed,Arial,sans-serif;
-letter-spacing: 2px;
-text-transform: uppercase;
-white-space: nowrap;
-text-overflow: ellipsis;
+
+.sale-item > h1 {
+  margin: 1rem 1rem 0;
+  text-align: center;
+}
+.sale-item > ul {
+  margin: ;
+}
+.sale-item > p {
+  margin: ;
+  padding: 20px;
+  font-size: 70px;
+}
+.sale-item > img {
+  order: -1;
+  align-self: left;
+  height: ;
+  object-fit: cover;
+}
+.indextext{
+	background-color: #262626;
+	display: inline-block;
+	float: right;
+	padding: 40px 10px 10px 10px;
+	text-align: left;
+	color: whitesmoke;
+	font-size: 20px;
+
+}
+.indextextbody{
+	background-color: #262626;
+	display: inline-block;
+	float: right;
+	padding: 40px 10px 10px 0px;
+	text-align:left ;
+	color: #bfbbb4;
+}
+.indextext > p{
+	font-size: 15px;
+}
+.title {
+	font-size: 12px;
+	text-transform: uppercase;
+	display: inline-block;
+	float: right;
+}
+
+.pic {width: 100%;
+height: auto;
+}
+.pic2{width: 50%;
+height: auto;
 overflow: hidden;
 }
 
+.pic2 img {
+    width: 400px;
+    height: 300px;
+    
+}
+
+    <div class="crop">
+        <img src="https://i.stack.imgur.com/wPh0S.jpg" alt="Donald Duck">
+    </div>

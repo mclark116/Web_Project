@@ -6,7 +6,7 @@
 body {
 	font-family: poppins;
   background-size: cover;
-  background-image: url("film reel.jpg");
+  background-image: url("gina-carano.jpg");
   background-attachment: fixed;
   background-position: center center;
 }
@@ -81,7 +81,8 @@ margin-right: 10px;
   }
   .deals {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-rows: 250px;
     grid-gap: 1rem;
   }
 }
@@ -96,8 +97,15 @@ margin-right: 10px;
   flex-flow: column;
   border: 1px solid #bfbfbf;
   border-radius: ;
-  padding: .5rem;
+  padding: 0px;
   background-color: white;
+  
+/*This is what makes the background trippy
+  background-size: cover;
+  background-image: url("spaceforce.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  */
 }
 a {text-decoration: none;
 color: black;
@@ -107,18 +115,20 @@ color: black;
   text-align: center;
 }
 .sale-item > ul {
-  margin: 0 0 1rem;
+  margin: ;
 }
 .sale-item > p {
-  margin: 0.25em 1rem 1rem;
+  margin: ;
 }
 .sale-item > img {
   order: -1;
   align-self: left;
-  height: 200px;
+  height: ;
   object-fit: cover;
 }
 #headline > img {height: 300px;}
+
+}
 
 /*bring this image down to show the whole head*/
 
@@ -131,7 +141,7 @@ color: black;
   border-radius: 1rem;
   font-size: 1.2rem;
 }
-.pic {width: 100%;
+.pic {width: 50%;
 height: auto;
 }
 .pic2{max-width: 100%;
@@ -158,11 +168,11 @@ height: auto;
   border: 2px red;
 }
 .sale-item {
-  display: flex;
+  display: column;
   flex-flow: column;
   border: 1px solid #bfbfbf;
   border-radius: ;
-  padding: .5rem;
+  padding: ;
   background-color: white;
 }
  
@@ -179,4 +189,3 @@ white-space: nowrap;
 text-overflow: ellipsis;
 overflow: hidden;
 }
-
