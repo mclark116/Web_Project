@@ -1,14 +1,16 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
 	font-family: poppins;
   background-size: cover;
-  background-image: url("film reel.jpg");
+  background-image: ;
   background-attachment: fixed;
   background-position: center center;
+  background-color: whitesmoke;
 }
 .wrapper {
 	width: 100%;
@@ -65,14 +67,7 @@ body {
 	width: 210px;
 }
 
-iframe {border: 2px solid black;
-float: left;
-margin-right: 10px;
-}
-
-@supports (display: grid) {
-	
-  main { 
+main { 
     max-width: 10000px;
     margin: 0px 100px;
   }
@@ -81,7 +76,7 @@ margin-right: 10px;
   }
   .deals {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 1rem;
   }
 }
@@ -115,7 +110,7 @@ color: black;
 .sale-item > img {
   order: -1;
   align-self: left;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 #headline > img {height: 300px;}
@@ -180,3 +175,30 @@ text-overflow: ellipsis;
 overflow: hidden;
 }
 
+
+
+.pic3{
+	display: flex;
+	width: 90%;
+	height: ;
+	overflow: hidden;
+	border: 2px solid red;
+}
+
+.pic3 img {
+    height: 400px;
+	margin: 10px;   
+}
+#space{
+	margin-bottom: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+ .bios {
+    display: grid;
+    grid-template-columns: /*repeat(auto-fit, minmax(*/80%, 1fr;
+	grid-template-rows: 1fr;
+    grid-gap: 1rem;
+	border: 2px solid blue;
+ }
