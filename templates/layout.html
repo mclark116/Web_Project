@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/static/css/experiment.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Movie Notch</title>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <a href = "{{ url_for('index') }}"><h1>MOVIE NOTCH</h1></a>
+            <div class = "menu-area">
+                <ul class="links">
+                    <li class = "big-items">
+                        <a href="comingsoon.html"> Features</a>
+                    </li>
+                    <li class = "small-items">
+                        <a href="reviews.html"> Reviews</a>
+                    </li>
+                    <li class = "small-items">
+                        <a href= "flexgridblock.html"> YouTube</a>
+                    </li>
+                    <li class = "small-items">
+                        <a href="podcasts.html"> Podcasts</a>
+                    </li>
+                    <li class = "drop-down">
+                        <a href="contribute.html"> Contributors</a>             
+                            <ul class="writer-dropdown">
+                                <li><a href="biopage.html">Scott Lynn</a></li>
+                                <li><a href="biopage.html">Mat Clark</a></li>
+                                <li><a>Guests</a></li>
+                            </ul>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+        {% block content %}
+        {% endblock %}
+        <footer>
+            <div class="contact">
+                <a href="#" class="contact_us"> Contact Us</a>
+            </div>
+            <div class="social_links">
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </footer>
+    </body>
+</html>
