@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/static/css/experiment.css" rel="stylesheet" type="text/css" />
+        {% block head %}
+        {% endblock %}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Movie Notch</title>
     </head>
@@ -16,10 +17,10 @@
                         <a href="comingsoon.html"> Features</a>
                     </li>
                     <li class = "small-items">
-                        <a href="reviews.html"> Reviews</a>
+                        <a href="{{ url_for('reviews') }}"> Reviews</a>
                     </li>
                     <li class = "small-items">
-                        <a href= "flexgridblock.html"> YouTube</a>
+                        <a href= "{{ url_for('youtube') }}"> YouTube</a>
                     </li>
                     <li class = "small-items">
                         <a href="podcasts.html"> Podcasts</a>

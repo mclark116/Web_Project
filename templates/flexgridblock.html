@@ -1,42 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="flexgridblock.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Nav Test</title>
-</head>
-<body>
-	<div class = "wrapper">
-		<a href = "experiment.html"><h1>MOVIE NOTCH</h1></a>
-		<div class = "menu-area">
-                    <ul class="links">
-                        <li class = "big-items">
-                            <a href="comingsoon.html"> Features</a>
-                        </li>
-                        <li class = "small-items">
-                            <a href="reviews.html"> Reviews</a>
-                        </li>
-                        <li class = "small-items">
-                            <a href="flexgridblock.html"> YouTube</a>
-                        </li>
-                        <li class = "small-items">
-                            <a href="podcasts.html"> Podcasts</a>
-                        </li>
-                        <li class = "drop-down">
-                            <a href="contribute.html"> Contributors</a>             
-                                    <ul class="writer-dropdown">
-                                        <li><a href="biopage.html">Scott Lynn</a></li>
-                                        <li><<a href="biopage.html">Mat Clark</a></li>
-                                        <li><a>Guests</a></li>
-                                    </ul>
-                        </li>
-                    </ul>
-                
-         	 
-		</div>
-	</div>
+{% extends 'layout.html' %}
+{% block head %}
+    <link href="/static/css/flexgridblock.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+    
+{% block content %}	
 <main class="deals">
 	<article class="sale-item">
 		
@@ -77,5 +44,6 @@
 	</article>
 	</a>
   </a> 
+  {% endblock %}
  </main>
  </body>

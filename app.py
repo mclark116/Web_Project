@@ -10,6 +10,10 @@ def index():
 def reviews():
     return render_template('reviews.html')
 
+@app.route('/youtube')
+def youtube():
+    return render_template('flexgridblock.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=8000, host='127.0.0.1')
