@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <link href="/static/css/form.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block content %}
+    <div class="form-placement">
+        <form action="#" method="POST">
+            <h1>Article Input</h1>
+            <h2></h2>
+            <label for="name">Author Name:</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="title">Article Title:</label>
+            <input type="text" id="title" name="title"><br>
+
+            <label for="subtitle">Article Subtitle:</label>
+            <input type="text" id="subtitle" name="article_subtitle"><br>
+
+            <label for="url"><i class="fas fa-camera"></i> URL</label>
+            <input id="url" name="url" type="text" placeholder="Photo link">
+
+            
+            <label for="description" style="display: none;">Description</label>
+            <textarea name="description" id="description" cols="50" rows="10" placeholder="Place text here."></textarea>
+                        
+
+            <label for="interests" class="checkbox">Interests:</label><br>
+            <input type="checkbox" id="recent_news" value="recent_news" name="user_interest">
+            <label class="interest-items" for="recent_news">Recent News</label><br>
+            <input type="checkbox" id="recent_news" value="recent_news" name="user_interest">
+            <label class="interest-items" for="recent_news">New and Upcoming Releases</label><br>
+            <input type="checkbox" id="recent_news" value="recent_news" name="user_interest">
+            <label class="interest-items" for="recent_news">Reviews</label><br>
+            <input type="checkbox" id="recent_news" value="recent_news" name="user_interest">
+            <label class="interest-items" for="recent_news">Interviews</label><br>
+            <input type="checkbox" id="recent_news" value="recent_news" name="user_interest">
+            <label class="interest-items" for="recent_news">Opinion</label><br>
+
+            <br>
+            <button class="submit-button" type="submit">Sign Up!</button>
+        </form>
+    </div>
+{% endblock %}

@@ -6,15 +6,16 @@
 
 {% block content %}
 <main class="deals">
-	
-  <a href = "https://www.outkick.com">
-	<article class="sale-item">
-		<h1>Gina Carano fired for speaking truth</h1>
-		<p>Woke mob cancels another free thinker</p>
-		<img class = "pic2" src="gina-carano.jpg" alt="You get: a white computer with matching peripherals">
-		<span class = "author"> Mat Clark</span>
-	</article>
-  </a>
+  {% for review in reviews %}
+    <a href = "https://www.outkick.com">
+	    <article class="sale-item">
+	    	<h1>{{ review.title }}</h1>
+		    <p>{{ review.sub_title }}</p>
+		    <img class = "pic2" src="{{ review.url }}" alt="You get: a white computer with matching peripherals">
+		    <span class = "author"> {{ review.name }}</span>
+	    </article>
+    </a>
+  {% endfor %}
   
 <a href = "https://www.outkick.com">
 	<article class="sale-item">
