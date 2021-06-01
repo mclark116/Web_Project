@@ -7,7 +7,7 @@
 {% block content %}
 <main class="deals">
   {% for review in reviews %}
-    <a href = "https://www.outkick.com">
+    <a href = "{{ url_for('full', id=review.id) }}">
 	    <article class="sale-item">
 	    	<h1>{{ review.title }}</h1>
 		    <p>{{ review.sub_title }}</p>
@@ -16,60 +16,6 @@
 	    </article>
     </a>
   {% endfor %}
-  
-<a href = "https://www.outkick.com">
-	<article class="sale-item">
-		<h1>Subtle genius of SpaceForce</h1>
-		<p>Steve Carell navigates treacherous political waters</p>
-		<img class = "pic2" src="spaceforce.jpg" alt="You get: a white computer with matching peripherals">
-		<span class = "author"> Mat Clark</span>
-	</article>
-  </a>
-  
-  <a href = "https://www.outkick.com">
-	<article class="sale-item">
-		<h1>Mortal Kombat Reboot</h1>
-		<p>Insiders discuss the Warner Bros upcoming cinematic universe</p>
-		<img class = "pic2" src="subzero.jpg" alt="You get: a white computer with matching peripherals">
-		<span class = "author"> Mat Clark</span>
-	</article>
-  </a>
-  
-  <article class="sale-item">
-    <h1>Epic Christmas Break Parties</h1>
-    <p>"I don't fall."</p>
-    <img class = "pic2" src="scotty christmas party.jpg"
-         alt="You get: a dot-matrix printer."/>
-  </article>
-
-  <article class="sale-item">
-    <h1>Bromigos Reunite</h1>
-    <p>"Best Friends Forever bracelets"</p>
-    <img class = "pic" src="bromance.png"
-         alt="You get: a dot-matrix printer.">
-  </article>
-
-  <article class="sale-item">
-    <h1>State Champs!</h1>
-    <p>Mat Clark and Scotty "too hottie" Lynn become first state champions for AHS in 4 years</p>
-    <img class = "pic2" src="state champs.jpg"
-         alt="You get: a dot-matrix printer.">
-  </article>
-
-  <article class="sale-item">
-    <h1>Top 10 movies from the 90s </h1>
-    <p>Maybe the overwhelming sense of nostalgia skews our opinion, but these movies...</p>
-    <img class = "pic" src="Mario.jpg"
-         alt="You get: a white computer with matching peripherals.">
-    <button>See The Album!</button>
-  </article>
-  
-  <article class="sale-item">
-    <h1>Lift Weights, Get Money </h1>
-    <p>Lifestyle of our early 20s.</p>
-    <img class = "pic2" src="swoll patrol.jpg"
-         alt="You get: a white computer with matching peripherals.">
-  </article>
 </main>
 {% endblock %}
 	

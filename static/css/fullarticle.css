@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rajdhani:wght@600&display=swap');
+/* LOWER NAV CONTAINER*/
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Montserrat'; 
+}
+
+/*.logo_container {
+    background-color: whitesmoke;
+}*/
+
+/*BEGIN HEADER SECTION*/
+header {
+    background-color: #353535;
+}
+
+/*.links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-left:0;
+}
+.links li {
+    display: inline;
+    padding: 10px 20px;
+}
+.links_container a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 24px;
+}
+.links_container a:hover {
+    color: forestgreen;
+    border: forestgreen;
+    background-color: whitesmoke;
+}*/
+
+.logo h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+/*img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+}*/
+
+/*.links_container {
+}*/
+
+
+/*BEGIN FOOTER*/
+    footer {
+        background-color: #353535;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    .contact a:hover {
+        background-color: forestgreen;
+    }
+
+    .social_links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social_links a {
+        margin: 10px 20px;
+        font-size: 20px;
+        color: whitesmoke;
+        padding: 10px 10px;
+        border: 1px solid whitesmoke;
+        border-radius: 50%;
+    }
+
+    /*.social_links a:hover {
+        color: forestgreen;
+        border: forestgreen;
+    }
+    ---don't know if i like the green hover*/
+/*END FOOTER*/
+
+
+
+
+/*BEGIN BODY OF WEBPAGE*/
+    .main_article {
+        text-align: left;
+    }
+
+    body {
+    background-image: url(banner\ image\ b_w.jpg);
+    }
+
+    main {
+        min-height: 900px;
+    }
+    .flex_parent {
+        /*background-color: red;*/
+        display: flex;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    .flex_child_1 {
+        background-color: whitesmoke;
+        /*width: 600px;*/
+        display: block;
+        flex: 2 2 70%;
+        padding: 20px;
+    }
+
+    .flex_child_2 {
+        background-color:whitesmoke;
+        display: block;
+        flex: 0 0 30%;
+        padding: 20px;
+    }
+
+    .flex_child_1 p {
+        max-width:660px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        font: 400 14px;
+        font-family: Montserrat;
+        color: black;
+    }
+/*END BODY OF WEBPAGE*/
+
+
+
+.wrapper {
+    width: auto;
+    margin: auto;
+}
+
+.menu_area {
+    margin-top: 10px;
+}
+
+.menu_area ul {
+    background-color: #353535;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu_area ul li {
+    display: inline-block;
+}
+
+.menu_area ul li ul {
+    padding: 0;
+}
+
+.menu_area ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding: 10px 35px;
+    font-weight: bold;
+}
+
+.menu_area ul ul li a {
+    padding: 10px 0px 10px -40px;
+}
+
+.menu_area ul li:hover {
+    background: forestgreen;
+}
+
+.menu_area ul li:hover > ul {
+    display: block;
+}
+
+.menu_area ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #353535;
+    text-align: left;
+}
+
+.menu_area ul ul li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid whitesmoke;
+    width: 210px;
+    }
+
+.image_size {
+    width: 650px;
+    height: auto;
+}
+.sale_item > img {
+    order: -1;
+    align-self: left;
+    height: 350px;
+    object-fit: cover;
+  }

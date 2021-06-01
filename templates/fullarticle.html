@@ -1,0 +1,84 @@
+{% extends 'layout.html' %}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    <link href="/static/css/fullarticle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% endblock %}
+    <title>Article</title>
+</head>
+
+
+{% block content %}
+<body>
+    <header>
+        <nav id="nav_bar">
+                <div class="wrapper">
+                    <div class="logo">
+                        <h1>Movie Notch</h1>
+                    </div>
+                    <div class="menu_area">
+                        <ul>
+                            <li><a href="#"> Features</a></li>
+                            <li><a href="#"> Reviews</a></li>
+                            <li><a href="#"> YouTube</a></li>
+                            <li><a href="#"> Podcast</a></li>
+                            <li><a href="#"> Contributors</a>
+                                <ul>
+                                    <li><a href="#">Scott Lynn</a></li>
+                                    <li><a href="#">Mat Clark</a></li>
+                                    <li><a href="#">Guest Star</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="flex_parent">
+            <article class="flex_child_1">
+                <div class="article_header">
+                    <img class="image_size" src='{{ article.url }}' alt="Lebron James and Bugs Bunny">
+                    <h1>{{ article.title }}</h1>
+                    <h3>{{ article.sub_title }}</h3>
+                    <p>{{ article.name }}</p>
+                    <p>{{ article.date }}</p>
+                    
+                </div>
+                <div class="article_body">
+                    <p>
+                       {{ article.body }}
+                    </p>
+                </div>
+            </article>
+            <aside class="flex_child_2">
+                <h1>Sidebar</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem blanditiis officiis iure doloribus modi dolorem ipsum itaque nobis ullam. Deserunt eum minus accusamus sit ducimus! Assumenda eum optio error!
+                </p>
+            </aside>
+        </div>
+        <section id="edit-delete">
+            <a href="{{ url_for('edit_article', id=article.id) }}"><i class=""></i>Edit</a>
+            <a href="far fa-trash-alt">Delete</a>
+        </section>
+    </main>
+{% endblock %}
+    <footer>
+        <div class="contact">
+            <a href="#" class="contact_us"> Contact Us</a>
+        </div>
+        <div class="social_links">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

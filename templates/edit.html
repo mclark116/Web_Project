@@ -6,24 +6,24 @@
 
 {% block content %}
     <div class="form-placement">
-        <form action="{{ url_for('form') }}" method="POST">
+        <form action="{{ url_for('edit_article', id=article.id) }}" method="POST">
             <h1>Article Input</h1>
             <h2></h2>
             <label for="name">Author Name:</label>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name" value='{{ article.name }}'><br>
 
             <label for="title">Article Title:</label>
-            <input type="text" id="title" name="title"><br>
+            <input type="text" id="title" name="title" value='{{ article.title }}'><br>
 
             <label for="subtitle">Article Subtitle:</label>
-            <input type="text" id="subtitle" name="article_subtitle"><br>
+            <input type="text" id="subtitle" name="article_subtitle" value='{{ article.sub_title }}'><br>
 
-            <label for="url"><i class=""></i> URL</label>
-            <input id="url" name="url" type="text" placeholder="Photo link">
+            <label for="url"><i class="fas fa-camera"></i> URL</label>
+            <input id="url" name="url" type="text" placeholder="Photo link" value='{{ article.url }}'>
 
             
             <label for="description" style="display: none;">Description</label>
-            <textarea name="description" id="description" cols="50" rows="10" placeholder="Place text here."></textarea>
+            <textarea name="description" id="description" cols="50" rows="10" placeholder="Place text here.">{{ article.body }}</textarea>
                         
 
             <label for="interests" class="checkbox">Interests:</label><br>
